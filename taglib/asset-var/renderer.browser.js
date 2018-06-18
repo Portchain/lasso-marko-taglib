@@ -6,5 +6,5 @@ module.exports = function (input, out) {
     return;
   }
 
-  renderBody.apply(null, [out].concat(values.map(val => require(val))));
+  renderBody.apply(null, [out].concat(values.map(require)));
 };
